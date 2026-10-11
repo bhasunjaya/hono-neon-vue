@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.dev.vars
+.wrangler/
+.turbo/
+*.local
+.codegraph/
+.pi/
+.opencode/
+.env

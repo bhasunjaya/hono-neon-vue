@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "echo 'no lint configured'",
+    "build": "echo 'workers: no build step (wrangler deploy)'",
+    "seed:admin": "tsx src/seed-admin.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.4.1",
+    "@repo/db": "workspace:*",
+    "@repo/shared": "workspace:*",
+    "better-auth": "^1.1.0",
+    "drizzle-orm": "^0.36.4",
+    "hono": "^4.6.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260702.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.149.0"
+  }
+}
